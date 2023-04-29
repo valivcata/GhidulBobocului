@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Slider</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper_item">
+                <img class="swiper_img" src="imgs/img1.JPG" alt="">
+
+                <div class="swiper_item_text">
+                    <div class="swiper_item_title">Universitatea Politehnica Timișoara</div>
+                    <div class="swiper_item_sub">Universitatea Politehnica Timișoara este o instituție de învățământ superior cu profil tehnic din Timișoara, România, înființată în anul 1920.</div>
+                    <a href="#test" class="swiper_item_btn">Catre sectiune</a>
+                </div>
+
+                <div class="swiper_layout"></div>
+            </div>
+
+            <div class="swiper-slide swiper_item">
+                <img class="swiper_img" src="imgs/img2.JPG" alt="">
+
+                <div class="swiper_item_text">
+                    <div class="swiper_item_title">Universitatea Politehnica Timișoara 2222</div>
+                    <div class="swiper_item_sub">Universitatea Politehnica Timișoara este o instituție de învățământ superior cu profil tehnic din Timișoara, România, înființată în anul 1920. 222</div>
+                    <a href="#" class="swiper_item_btn">Catre sectiune 222</a>
+                </div>
+
+                <div class="swiper_layout"></div>
+            </div>
+
+            <div class="swiper-slide swiper_item">
+                <img class="swiper_img" src="imgs/img3.JPG" alt="">
+
+                <div class="swiper_item_text">
+                    <div class="swiper_item_title">Universitatea Politehnica Timișoara 3333</div>
+                    <div class="swiper_item_sub">Universitatea Politehnica Timișoara este o instituție de învățământ superior cu profil tehnic din Timișoara, România, înființată în anul 1920. 333</div>
+                    <a href="#" class="swiper_item_btn">Catre sectiune 333</a>
+                </div>
+
+                <div class="swiper_layout"></div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+
+    <div id="test">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis voluptate quisquam tempora fugiat officiis deleniti modi quos. Numquam sunt voluptatibus, alias natus nisi quaerat eaque repellendus eveniet? Explicabo, deserunt officia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit temporibus accusantium repellendus rem animi similique, officiis, quidem quo quod est magnam nesciunt laboriosam atque autem sequi laudantium illo voluptate repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nam vel cum minima ipsam veritatis rerum amet repellendus dolore sint expedita ducimus, doloremque voluptatibus eaque sed. Eius quia accusantium adipisci.</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false
+            },
+            loop: true,
+        });
+      </script>
+</body>
+</html>
